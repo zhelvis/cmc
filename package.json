@@ -1,0 +1,32 @@
+{
+	"name": "@zhelvis/cmc",
+	"description": "CoinMarketCap API client generated from Postman collection",
+	"version": "1.0.0",
+	"license": "MIT",
+	"author": "Vladimir Zhelvis <zhelvisvladimir@gmail.com>",
+	"module": "dist/index.js",
+	"types": "dist/types/index.d.ts",
+	"type": "module",
+	"files": ["dist"],
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
+		"@hey-api/openapi-ts": "^0.53.0",
+		"@rollup/plugin-typescript": "^11.1.6",
+		"postman2openapi": "^1.2.1",
+		"rollup": "^4.21.2",
+		"tslib": "^2.7.0",
+		"typedoc": "^0.26.6"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"@hey-api/client-fetch": "^0.2.4"
+	},
+	"scripts": {
+		"generate": "bun ./generator.ts",
+		"build": "rollup -c rollup.config.js",
+		"docs": "typedoc",
+		"check": "biome check"
+	}
+}
