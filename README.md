@@ -8,6 +8,7 @@ npm install @zhelvis/cmc
 
 ## Documentation
 
+- [Package docs]
 - [CoinMarketCap RESTful API docs] 
 
 ## Usage
@@ -54,6 +55,7 @@ bun run build
 ```
 
 [Postman collection]: https://pro-api.coinmarketcap.com/v1/tools/postman
+[Package docs]: https://zhelvis.github.io/cmc/
 [CoinMarketCap RESTful API docs]: https://coinmarketcap.com/api/documentation/v1/
 [Bun]: https://bun.sh/
 [Biome]: https://biomejs.dev/
